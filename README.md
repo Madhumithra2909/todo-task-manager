@@ -14,30 +14,52 @@ A full stack TODO application built using React, Express, MongoDB, and Firebase 
 - ✅ Progress bar with percentage
 - ✅ Celebration animation when all tasks complete 🎉
 - ✅ Clean and responsive UI
-
----
-
-## 🌍 Live Links
-
-- 🚀 Frontend: [https://your-netlify-link](https://your-netlify-link)
-- 🛠 Backend API: [https://your-render-link](https://your-render-link)
-
 ---
 
 ## 📽️ Loom Video Demo
 
-🎥 [Watch Video Demo (1–3 mins)](https://www.loom.com/share/your-loom-video-link)
 
 ---
+
+https://github.com/user-attachments/assets/fff72c59-d568-4ed0-8150-ffc519cc44ce
+
+
 
 ## 🧱 Architecture Diagram
 
-Add this image to your repo → name it `architecture.png`  
-Then link like this:
 
-![architecture](./architecture.png)
+---┌──────────────────────────────┐
+│         User (Browser)       │
+│ - Views Tasks                │
+│ - Creates/Edits/Deletes      │
+│ - Logs in with Google        │
+└────────────┬─────────────────┘
+             │
+             ▼
+┌──────────────────────────────┐
+│      Frontend (Vite + React) │
+│     • Hosted on Vercel       │
+│     • Calls Backend API      │
+└────────────┬─────────────────┘
+             │
+             ▼
+┌──────────────────────────────┐
+│   Backend (Node + Express)   │
+│     • Hosted on Render       │
+│     • API endpoints: /get,   │
+│       /add, /toggle, etc.    │
+└────────────┬─────────────────┘
+             │
+             ▼
+┌──────────────────────────────┐
+│     MongoDB Atlas (Cloud)    │
+│  • Stores tasks, categories  │
+│  • Stores user/task sharing  │
+└──────────────────────────────┘
 
----
++ Firebase Auth (Google Sign-in)
+   ↳ Handles user login
+
 
 ## 📌 Assumptions
 
