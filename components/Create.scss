@@ -1,0 +1,31 @@
+.create_form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+
+  input, select {
+    flex: 1;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    background: #23244a;
+    color: white;
+    border: 1px solid #3b3c5c;
+    font-size: 1rem;
+  }
+
+  button {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: #4338ca;
+  }
+}

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121429;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 2.5rem auto;
+  background-color: #181a32;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.topbar h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logout-btn {
+  background: #23244a;
+  border: 1px solid #3b3c5c;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #3b3c5c;
+  color: #a5b4fc;
+  border-color: #6366f1;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #334155;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.3rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1.1rem;
+  background: #23244a;
+  border: none;
+  border-radius: 10px;
+  color: #b3b6d4;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: linear-gradient(90deg, #6c63ff, #3b82f6);
+  color: white;
+}
+
+/* Task list */
+.task-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.task {
+  background: #23244a;
+  padding: 0.8rem 1rem;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.task .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.task .line_through {
+  text-decoration: line-through;
+  color: #6c63ff;
+}
+
+.task .icon {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task .icon:hover {
+  color: #e11d48;
+}
+
+.task small,
+.task span {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* Task form (Create) */
+.create_form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.create_form input[type="text"],
+.create_form input[type="email"],
+.create_form input[type="date"],
+.create_form select {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 180px;
+  background: #1f2937;
+  color: white;
+}
+
+.create_form button {
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Celebration animation */
+@keyframes popConfetti {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.celebration {
+  text-align: center;
+  color: #10b981;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #23244a;
+  border-radius: 8px;
+}
+
+
+.date-picker-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 180px;
+}
+
+.date-picker-wrapper input[type="date"] {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+
+
