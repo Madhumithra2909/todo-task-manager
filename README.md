@@ -69,8 +69,5 @@ https://github.com/user-attachments/assets/fff72c59-d568-4ed0-8150-ffc519cc44ce
 - “Overdue” = Due date before today and not completed
 - User must be signed in to create tasks
 
----
 
-## 💡 Credit
 
-This project is submitted for the [Katomaran Full Stack Hackathon](https://katomaran.com) ✨
